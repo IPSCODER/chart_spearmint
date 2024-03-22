@@ -10,7 +10,7 @@ const App = () => {
   const getData = async () =>{
     try{
       await axios.get("https://retoolapi.dev/gDa8uC/data").then(resp => {
-      setxData(resp.data.slice(0,50)
+      setxData(resp.data.slice(0,50))
     })
     await axios.get("https://retoolapi.dev/o5zMs5/data").then(resp => {
       setyData(resp.data.slice(0,50))
